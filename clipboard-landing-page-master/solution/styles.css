@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+h1,h2{
+    color: hsl(210, 10%, 33%);
+}
+
+h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin-bottom: 17px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 29px;
+}
+
+section:not(1) {
+    margin-bottom: 100px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-section{
+    width: 100%;
+    max-width: 620px;
+}
+
+#header{
+    width: 100%;
+    height: 360px;
+    background-image: url('./images/bg-header-desktop.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#header img {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top:40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#text-header{
+    transform: translateY(-8%);
+    text-align: center;
+}
+
+#text-header h1{
+    font-size: 39px;
+    margin-bottom: 15px;
+}
+
+#text-header p:first-of-type{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#text-header .box-buttons{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-buttons button {
+    font-size: 18px;
+    padding: .8em 2em;
+    border-radius: 30px;
+    outline: none;
+    border: 0;
+    box-shadow: 0px -3px 3px rgba(10, 10, 10,.5) inset;
+    cursor: pointer;
+    transition: background-color .4s, transform .4s;
+}
+
+#ios{
+    margin-right: 15px;
+    background-color: hsl(171, 66%, 44%);
+    
+}
+
+#ios:hover{
+    background-color: hsla(171, 66%, 44%, .9);
+    transform: scale(1.04);
+}
+
+#mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+#mac:hover{
+    background-color: hsla(233, 100%, 69%,.9);
+    transform: scale(1.04);
+}
+
