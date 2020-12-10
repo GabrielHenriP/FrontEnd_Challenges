@@ -133,7 +133,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 #advantages .box-pc {
@@ -164,6 +164,27 @@ main{
 
 #advantages .box-texts p{
     font-size: 17px;
+}
+
+#access {
+    padding: 0 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#access p{
+    font-size: 18px;
+    max-width: 680px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#access img {
+    width: 100%;
+    max-width: 905px;
 }
 
 
