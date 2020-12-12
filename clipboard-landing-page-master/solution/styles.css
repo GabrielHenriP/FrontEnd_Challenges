@@ -187,5 +187,40 @@ main{
     max-width: 905px;
 }
 
+#tools{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#tools p{
+    margin-bottom: 60px;
+}
+
+#tools .container-tools{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tools .box-tools{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#tools .box-tools img{
+    margin-bottom: 40px;
+}
+
+
+
 
 
