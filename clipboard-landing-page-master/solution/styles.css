@@ -245,6 +245,70 @@ main{
     margin-bottom: 50px;
 }
 
+footer{
+    width: 100%;
+    background-color: hsla(201, 11%, 66%, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div:first-of-type,
+footer div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo{
+    flex:1;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .info{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 1%;
+}
+
+.info .box-p{
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    align-content: center;
+    justify-items: center;
+}
+
+.box-p p {
+    text-align: left;
+    width: 30%;
+    font-size: 18px;
+    color:hsl(210, 10%, 33%);
+    padding-right: 40px;
+}
+
+.box-p p:nth-of-type(1),
+.box-p p:nth-of-type(2),
+.box-p p:nth-of-type(3){
+    margin-bottom: 20px;
+}
+
+footer .social-midias{
+    flex: 1;
+}
+
+.social-midias img:nth-of-type(2) {
+    margin: 0 25px;
+}
+
 
 
 
