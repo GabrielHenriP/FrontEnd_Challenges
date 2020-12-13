@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,p,a{
+    color: white;
+}
+
+body{
+    background-color: hsl(217, 28%, 15%);
+    padding: 0 1%;
+}
+
+header{
+    padding: 60px;
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+}
+
+header ul {
+    display: flex;
+}
+
+ul li:nth-of-type(2){
+    margin: 0 40px;
+}
+
+main{
+    border: 1px solid white;
+}
+
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#intro .container {
+    max-width: 720px;
+}
