@@ -30,7 +30,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
 }
 
 header ul {
@@ -42,7 +41,7 @@ ul li:nth-of-type(2){
 }
 
 main{
-    border: 1px solid white;
+
 }
 
 #intro{
@@ -116,4 +115,62 @@ main{
 
 .box-tool p {
     line-height: 25px;
+}
+
+#productive {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  hsl(218, 28%, 13%);
+    font-family: 'Raleway', sans-serif;
+}
+
+#productive .box-img {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-img img {
+    width: 100%;
+    max-width: 615px;
+}
+
+#productive .text{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
+
+.text .box {
+    max-width: 600px;
+    text-align: left;
+}
+
+.box h2{
+    font-size: 36px;
+    max-width: 320px;
+}
+
+.box p{
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.box .link{
+    max-width: 180px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border-bottom: 2px solid hsl(198, 60%, 50%);
+    padding-bottom: 4px;
+}
+
+.box a{
+    color: hsl(198, 60%, 50%);
+    font-weight: bold;
+    margin-right: 10px;
+
 }
