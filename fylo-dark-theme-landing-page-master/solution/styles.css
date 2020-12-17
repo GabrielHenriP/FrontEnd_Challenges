@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,p,a{
+h1,h2,h3,p,a,strong,small{
     color: white;
 }
 
@@ -91,6 +91,8 @@ main{
 }
 
 #tools{
+    margin: 0 auto;
+    max-width: 1440px;
     background-color: hsl(218, 28%, 13%);
     display: flex;
     flex-wrap: wrap;
@@ -118,12 +120,15 @@ main{
 }
 
 #productive {
+    margin: 0 auto;
+    max-width: 1440px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color:  hsl(218, 28%, 13%);
     font-family: 'Raleway', sans-serif;
+    padding: 100px 0;
 }
 
 #productive .box-img {
@@ -174,3 +179,56 @@ main{
     margin-right: 10px;
 
 }
+
+#testimonials{
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 0 200px 0;
+
+}
+
+#testimonials .card {
+    font-family: 'Raleway', sans-serif;
+    width: 28%;
+    background-color:hsl(219, 30%, 18%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0,.1);
+}
+
+.card p {
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.person .text strong{
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.person .text small{
+    font-size: 9px;
+}
+
