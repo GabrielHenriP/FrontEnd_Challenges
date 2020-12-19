@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,p,a,strong,small{
+h1,h2,h3,p,a,strong,small,span{
     color: white;
 }
 
@@ -38,10 +38,6 @@ header ul {
 
 ul li:nth-of-type(2){
     margin: 0 40px;
-}
-
-main{
-
 }
 
 #intro{
@@ -290,7 +286,96 @@ main{
 
 footer {
     width: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 40px;
     background-color: hsl(216, 53%, 9%);
+    padding-top: 200px;
+    font-family: 'Raleway', sans-serif;
 }
+
+footer > img {
+    
+    margin-bottom: 70px;
+    align-self: flex-start;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.container-footer .left{
+    width: 60%;
+    padding: 0 10px 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+   
+}
+
+.left .location {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.location img {
+    margin-right: 17px;
+}
+
+.location p {
+    line-height: 23px;
+}
+
+.left .contact {
+    width: 182px;
+    
+}
+
+.contact img {
+    margin-right: 12px;
+}
+
+.contact div:first-of-type{
+    margin-bottom: 15px;
+}
+
+.container-footer .right{
+    width: 40%;
+    display: flex;
+}
+
+.right p {
+    margin-bottom: 15px;
+}
+
+.right .aboutus{
+    flex: 1;
+}
+
+.right .contactus{
+    flex: 1;
+}
+
+.right .social {
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.social img:nth-of-type(2){
+    margin: 0 8px;
+}
+
+
 
