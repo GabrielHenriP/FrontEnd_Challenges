@@ -32,12 +32,32 @@ header{
     align-items: center;
 }
 
+header nav {
+    width: 50%;
+    max-width: 250px;
+}
+
 header ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul li:nth-of-type(2){
-    margin: 0 40px;
+    margin: 0 0px;
+    transition: text-decoration .2s;
+}
+
+ul li:hover{
+    text-decoration: underline;
+}
+
+li a{
+    transition: font-weight .2s;
+}
+
+li a:hover{
+    font-weight: bold;
 }
 
 #intro{
@@ -56,6 +76,10 @@ ul li:nth-of-type(2){
     max-width: 720px;
     margin-top: 40px;
     font-family: 'Raleway', sans-serif;
+}
+
+#intro .container img {
+    width: 100%;
 }
 
 #intro h1{
@@ -85,6 +109,12 @@ ul li:nth-of-type(2){
     border: 0;
     border-radius: 25px;
     padding: 16px ;
+    cursor: pointer;
+    transition: linear-gradient 1s;
+}
+
+#intro button:hover{
+    background: linear-gradient(to right,hsla(176, 68%, 64%, .5),hsla(198, 60%, 50%,.5));
 }
 
 #tools{
@@ -121,6 +151,7 @@ ul li:nth-of-type(2){
     max-width: 1440px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     background-color:  hsl(218, 28%, 13%);
@@ -170,6 +201,10 @@ ul li:nth-of-type(2){
     padding-bottom: 4px;
 }
 
+.box .link:hover{
+    border-bottom: 2px solid white;
+}
+
 .box a{
     color: hsl(198, 60%, 50%);
     font-weight: bold;
@@ -177,14 +212,20 @@ ul li:nth-of-type(2){
 
 }
 
+.box a:hover{
+    color: white;
+}
+
 #testimonials{
     margin: 0 auto;
     max-width: 1440px;
     background-color: hsl(218, 28%, 13%);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     padding: 0 0 200px 0;
+    position: relative;
 
 }
 
@@ -195,6 +236,15 @@ ul li:nth-of-type(2){
     padding: 20px;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0,.1);
+    position: relative;
+    z-index: 1;
+}
+
+#testimonials > img {
+    position: absolute;
+    top: -8%;
+    left: 4%;
+    z-index: 1;
 }
 
 .card p {
@@ -203,7 +253,7 @@ ul li:nth-of-type(2){
     margin-bottom: 20px;
 }
 
-.card img {
+.card .person img {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -284,6 +334,10 @@ ul li:nth-of-type(2){
     font-weight: bold;
 }
 
+.box-email button:hover{
+    background: linear-gradient(to right,hsla(176, 68%, 64%, .5),hsla(198, 60%, 50%,.5));
+}
+
 footer {
     width: 100%;
     padding-bottom: 40px;
@@ -293,12 +347,13 @@ footer {
 }
 
 footer > img {
-    
+    margin-left: 7%;
     margin-bottom: 70px;
     align-self: flex-start;
 }
 
 .container-footer {
+    width: 100%;
     display: flex;
 }
 
@@ -328,6 +383,8 @@ footer > img {
     line-height: 23px;
 }
 
+
+
 .left .contact {
     width: 182px;
     
@@ -344,10 +401,16 @@ footer > img {
 .container-footer .right{
     width: 40%;
     display: flex;
+    padding: 0 10px 0 30px;
 }
 
 .right p {
     margin-bottom: 15px;
+}
+
+.right p:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .right .aboutus{
@@ -377,5 +440,101 @@ footer > img {
     margin: 0 8px;
 }
 
+@media (max-width: 768px){
+    header {
+        width: 100%;
+        padding: 60px 1%;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 40px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    #tools .box-tool {
+        width: 100%;
+    }
+
+    #productive .box-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #productive .text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    #testimonials .card{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    #testimonials > img {
+        position: absolute;
+        top: -4%;
+        left: 12%;
+        z-index: 1;
+    }
+
+    #email .card-email{
+        padding: 30px 2%;
+    }
+
+    .card-email .box-email{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-email input{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .box-email button{
+        padding: 15px 2%;
+        
+        width: 50%;
+        min-width: 250px;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .container-footer .left{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding: 0 2%;
+    }
+
+    .container-footer .right{
+        width: 100%;
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+    .location {
+        margin-bottom: 30px;
+    }
+
+    .right .aboutus{
+        margin-bottom: 50px;
+    }
+
+    .right .contactus{
+        margin-bottom: 50px;
+    }
+
+    .right .social {
+        width: 100%;
+    }
+}
 
 
